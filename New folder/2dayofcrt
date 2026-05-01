@@ -73,3 +73,71 @@ int main() {
     cout << max_Number;
     return 0;
 }
+//Problem 5 --number postive add or break
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    int sum=0;
+   
+    
+    while (true){
+        cin>>n;
+        if(n<0){
+            break;
+        }
+        sum=sum+n;
+    }
+    cout<<sum;
+    return 0;
+}
+
+// Problem 6-- Continue Statement 
+// Print 1 to N and avoid those number which are divisible by 3
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cin >> n;
+    
+//     for(int i = 1; i <= n; i++) {
+//         if( i % 3 == 0){
+//             continue;
+//         }
+//         cout << i << " ";
+//     }
+//     return 0;
+// }
+
+// Problem 7 --- Smart Home Lighting System
+#include<iostream>
+using namespace std;
+
+int main() {
+    string dayOrlight;
+    bool motionDetected;
+
+    cout << "Is it day or night : ";
+    cin >> dayOrlight;
+
+    cout << "Is Motion Detected ? (1 for Yes, 0 for No): ";
+    cin >> motionDetected;
+
+    if(dayOrlight == "night" || dayOrlight == "Night") {
+
+        if(motionDetected) {
+            cout << "Turn on the LED light with 100% brightness.";
+        }
+        else {
+            cout << "Turn on the LED light with only 10% brightness.";
+        }
+
+    }
+    else {
+        cout << "Turn off the light.";
+    }
+
+    return 0;
+}
